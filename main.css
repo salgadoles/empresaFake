@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    --mainColor: #ffc400;
+    --hoverColor: #a9ac00;
+    --backgroundColor: #daeef8;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --loghtTwo: #aaa;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+
+.big-wrapper {
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-width: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteiner {
+    position: relative;
+
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.logo img {
+    width: 150px;
+    margin-right: -0.6rem;
+    margin-top: -0.6rem;
+}
+
+.right img {
+    width: 700px;
+    height: 600px;
+    ;
+}
+
+.logo h3 {
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.links a {
+    color: var(--lightTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+}
+
+.mostruario .conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.big-title {
+    font-size: 1.4rem;
+    color: var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.text {
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.showcase-area .btn {
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+.person {
+    width: 123%;
+    transform: translate(15%, 25px);
+}
+
+.form-box{/*alterações gerais em todos campos*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #ffc400;
+    border-radius: 14px;
+    margin-left: 50px;
+}
+.input-campo{/* Personalizacão Inputs*/
+    font-size: 15px;
+
+    color: #0000;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px  45px;
+    border: none;
+    border-radius: 30px;
+    outline:none ;
+    transition: .2s ease;
+    margin: 20px;
+}
+.input-campo:hover, .input-campo:focus{/*Transição ao clicar nos inputs*/
+    background: rgba(255, 255, 255, 0.25); 
+}
+::-webkit-input-placeholder{
+    color: #0000;
+}
+/*---------------------------------------------------------------------------*/
+
+.posicao{ /* Centraliza div*/
+display: grid; 
+place-items: center;
+}
+.form-box{/*alterações gerais em todos campos*/
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center; 
+width: 700px;
+height: 700px;
+overflow: hidden;
+z-index: 2;
+}
+.conteiner-login{ /*formulario de Login*/
+position: absolute;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+margin-top: 50px;
+;
+}
+.conteiner-registro{ /*Fomulario de Registro*/
+position: absolute;
+right: -520px;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+}
+.conteiner-redefinir{ /*Formulario de Recuperação de senha etapa 1*/
+position: absolute;
+right: -520px;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+}
+.conteiner-redefinir-dois{ /*Formulario de Recuperação de senha etapa 2*/
+position: absolute;
+right: -520px;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+}
+
+
+.topo span{ /*Texto menor no topo*/
+color: #fff;
+font-size: small;
+padding: 10px 0;
+display: flex;
+justify-content: center;
+}
+
+.dois-form{ /*Contem todos inputs*/
+gap: 10px;/*Distancia entre eles*/
+}
+.input-campo{/* Personalizacão Inputs*/
+font-size: 15px;
+background:rgba(255, 255, 255, 0.3);
+color: #fff;
+height: 50px;
+width: 100%;
+padding: 0 10px 0 45px;
+border: none;
+border-radius: 30px;
+outline:none ;
+transition: .2s ease;
+}
+.input-campo:hover, .input-campo:focus{/*Transição ao clicar nos inputs*/
+background: rgba(255, 255, 255, 0.25); 
+}
+::-webkit-input-placeholder{
+color: #fff;
+}
+.input-box i{/*Personalização dos Icons*/
+position: relative;
+top: -35px;
+left: 17px;
+color: #fff;
+}
+.enviar{/*Personalização do botão enviar*/
+font-size: 15px;
+font-weight: 500;
+color: black;
+height: 45px;
+width: 111%;
+border: none;
+border-radius: 30px;
+outline: none;
+background: rgba(255, 255, 255, 0.7);
+cursor: pointer;
+transition: .3s ease-in-out;
+}
+.enviar:hover{/*Transição do botão enviar ao passar o cursor em cima*/
+background: rgba(255, 255, 255, 0.5);
+box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.25);
+}
+.col{/*Div com links abaixo do botão enviar*/
+color:#fff;
+font-size: small;
+margin-top: 10px;
+}
+.col-1 label a{ /*Personalização do Esqueci minha Senha*/
+text-decoration: none;
+color: #fff;
+}
+.col-1 label a:hover{
+color:rgba(255, 255, 255, 0.7);
+transition: .5s ease-in-out;
+}
+
+.topo i{/*Icon "Voltar" no fomulario de Recuperação.*/
+position: absolute;
+top: 15px;
+font-size:40px;
+color: #fff;
+}
+.img{ /*Logo*/
+position: absolute;
+background:rgba(255, 255, 255, 0.1);
+padding: 10px;
+box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.25);
+
+}
+.dan{
+    display: flex;
+   justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
